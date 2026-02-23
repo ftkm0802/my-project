@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import MotivationDashboard from "@/components/MotivationDashboard";
 
 const MENU_ITEMS = [
   {
@@ -87,6 +88,9 @@ export default function DashboardPage() {
           </h2>
           <p className="text-gray-500 text-sm">利用したい機能をタップしてください</p>
         </div>
+
+        {/* Motivation Dashboard */}
+        <MotivationDashboard />
 
         {/* 4-card grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
